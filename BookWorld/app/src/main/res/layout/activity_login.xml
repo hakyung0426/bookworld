@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <EditText
+        android:id="@+id/id_edit"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/userid"
+        android:hint="아이디 입력"
+        android:maxLength="10" />
+
+
+    <EditText
+        android:id="@+id/pw_edit"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/userpw"
+        android:ems="10"
+        android:hint="비밀번호 입력"
+        android:inputType="numberPassword"
+        android:maxLength="4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CCCCBE"
+            android:text="로그인" />
+
+        <Button
+            android:id="@+id/activity_join"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CCCCBE"
+            android:text="회원가입" />
+
+    </LinearLayout>
+
+</LinearLayout>

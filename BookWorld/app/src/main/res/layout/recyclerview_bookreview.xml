@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#E7E6E6">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USER ID : "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView13"
+            android:text="등록 날짜 : "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView14"
+            android:text="별점 : "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView15"
+            android:text="무드 카테고리 : "
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/review_mood"
+            android:text="등록한 이미지"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/review_image"
+            android:text="독후감 내용"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/review_userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView13"
+            android:text="id"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/go_userpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/review_userid"
+            android:layout_marginHorizontal="10dp"
+            android:layout_toRightOf="@+id/review_userid"
+            android:background="#00FFFFFF"
+            android:src="@drawable/go" />
+
+        <TextView
+            android:id="@+id/review_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/textView14"
+            android:layout_toRightOf="@id/textView14"
+            android:text="date"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/review_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/textView15"
+            android:layout_toRightOf="@id/textView15"
+            android:text="4"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/review_mood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/textView16"
+            android:layout_toRightOf="@id/textView16"
+            android:text="mood1\nmood2"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/review_image"
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/textView17"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/review_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView18"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

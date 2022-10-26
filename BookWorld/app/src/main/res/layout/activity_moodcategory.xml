@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:text="무드 카테고리 선택"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나는"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"/>
+    <LinearLayout
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp">
+
+        <Spinner
+            android:id="@+id/spinner_one"
+            android:layout_width="250dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="해서"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp">
+
+        <Spinner
+            android:id="@+id/spinner_two"
+            android:layout_width="250dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="할래요"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/Category"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="카테고리:"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="180dip"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/move_moodlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:text="확인" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserpageActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/edid_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="useid"
+            android:textSize="25dp"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="의 독후감목록"
+            android:layout_toEndOf="@+id/edid_page"
+            android:layout_alignBottom="@+id/edid_page"
+            android:textSize="20dp"/>
+
+        <ToggleButton
+            android:id="@+id/userpage_flw"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:onClick="to_follow"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/follow_toggle_selector"
+            android:textOff=""
+            android:textOn=""/>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_userpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

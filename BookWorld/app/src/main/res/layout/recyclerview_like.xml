@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/bookimage"
+        android:layout_width="107dp"
+        android:layout_height="155dp"/>
+
+    <LinearLayout
+        android:layout_width="141dp"
+        android:layout_height="172dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/bookimage">
+
+        <TextView
+            android:id="@+id/booktitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="책이름"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/bookauthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저자"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/bookcompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="출판사"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/bookdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="출판일"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/likeDel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bin" />
+
+</RelativeLayout>

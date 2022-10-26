@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">위대한 책벌레들</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    
+    <string name = "server_address">http://192.168.49.155/</string>
+    <string name="kyobo_address">http://image.kyobobook.co.kr/images/book/large/</string>
+
+</resources>

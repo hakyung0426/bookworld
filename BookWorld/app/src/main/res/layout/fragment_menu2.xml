@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="상태: "
+            android:textSize="24sp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/worm_cdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView11"
+            android:textSize="24sp"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/time_ticking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+    <com.example.bookworld.BugView
+        android:id="@+id/bug_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+    </com.example.bookworld.BugView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="7dp">
+
+
+            <ImageView
+                android:id="@+id/give_fd"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:background="#FCFCFC"
+                android:backgroundTint="#FCFCFC"
+                android:src="@drawable/eatbook" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="책먹이주기"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="남은 책먹이 수 : "
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/fd_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

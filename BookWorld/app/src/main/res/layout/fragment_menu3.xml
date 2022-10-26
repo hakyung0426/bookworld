@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/search_btn"
+            style="@android:style/Widget.DeviceDefault.Button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_round"
+            android:text="TITLE\nSEARCH" />
+
+        <Button
+            android:id="@+id/barcode_btn"
+            style="@android:style/Widget.DeviceDefault.Button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/button_round"
+            android:gravity="center"
+            android:text="BARCODE\nSEARCH" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/mood_btn"
+            style="@android:style/Widget.DeviceDefault.Button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="10dp"
+            android:text="MOOD\nCATEGORY"
+            android:background="@drawable/button_round"/>
+
+        <Button
+            android:id="@+id/rec_btn"
+            style="@android:style/Widget.DeviceDefault.Button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="RECOMMENED\nBOOK"
+            android:background="@drawable/button_round"/>
+    </LinearLayout>
+</LinearLayout>
+
